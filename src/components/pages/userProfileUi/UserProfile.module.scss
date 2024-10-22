@@ -1,0 +1,52 @@
+.UserProfile {
+    display: flex;
+    .content {
+        background: linear-gradient(to bottom, #4b4b4b, #2e2e2e);
+        padding-top: 100px;
+        padding-bottom: 30px;
+        padding-left: 23px;
+        border-radius: 8px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        img {
+            cursor: pointer;
+            object-fit: cover;
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+        }
+
+        .user_info {
+            display: flex;
+            flex-direction: column;
+
+            p {
+                font-size: 13px;
+            }
+
+            h1 {
+                font-size: 80px;
+            }
+        }
+    }
+}
+
+@media(max-width: 800px) {
+    .UserProfile {
+        .content {
+            img {
+                width: 120px;
+                height: 120px;
+            }
+
+            .user_info {
+                h1 {
+                    font-size: 60px;
+                }
+            }
+        }
+    }
+}

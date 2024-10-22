@@ -1,0 +1,122 @@
+.Header {
+	.content {
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	  padding: 10px 0;
+	  
+	  .logo {
+		a {
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  color: #fff;
+  
+		  svg {
+			width: 33px;
+			height: 33px;
+		  }
+		}
+	  }
+  
+	  .search {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		// display: block; 
+
+		button {
+		  width: 50px;
+		  height: 50px;
+		  background-color: rgba(255, 255, 255, 0.141);
+		  border-radius: 50%;
+  
+		  svg {
+			width: 28px;
+			height: 28px;
+			color: rgba(255, 255, 255, 0.697);
+		  }
+		}
+  
+		.searchWrapper {
+		  position: relative;
+		  display: flex;
+		  align-items: center;
+  
+		  .searchIcon {
+			position: absolute;
+			left: 15px;
+			font-size: 20px;
+			cursor: pointer;
+		  }
+		  svg {
+			width: 30px;
+			height: 30px;
+		  }
+  
+		  input {
+			width: 480px;
+			height: 50px;
+			border-radius: 30px;
+			border: none;
+			background-color: rgba(255, 255, 255, 0.141);
+			padding-left: 55px; 
+			color: #fff;
+			font-size: 17px;
+
+			&::placeholder {
+				color: rgba(255, 255, 255, 0.721);
+			}
+		  }
+		  .browseIcon {
+			position: absolute;
+			right: 15px;
+			font-size: 20px;
+			cursor: pointer;
+			color: rgba(255, 255, 255, 0.914);
+		  }
+		}
+	  }
+  
+	  .auth {
+		.profile {
+			display: flex;
+			align-items: center;
+			gap: 23px;
+
+			svg {
+				width: 23px;
+				height: 23px;
+				color: rgba(255, 255, 255, 0.645);
+				cursor: pointer;
+			}
+			img {
+				object-fit: cover;
+				border-radius: 50%;
+				border: 10px solid rgba(255, 255, 255, 0.141);
+			}
+		}
+		.nonProfile {
+			button {
+				position: absolute;
+				right: 15px;
+				top: 10px;
+				width: 150px;
+				height: 40px;
+				background-color: white;
+				color: black;
+				font-size: 18px;
+				font-weight: 580;
+				border-radius: 30px;
+			}
+		}
+	  }
+	}
+  }
+  
+
+  @media(max-width: 450px) {
+	.search {
+        display: none;
+    }
+  }

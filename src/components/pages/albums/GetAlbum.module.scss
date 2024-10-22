@@ -1,0 +1,50 @@
+.Albums {
+    .content {
+        h1 {
+            font-size: 27px;
+        }
+        .mainAlbumItems {
+            display: flex;
+            align-items: center;
+            gap: 0px;
+        }
+        .albumItem {
+            padding: 0 10px;
+            padding-top: 10px;
+            height: 260px;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.085);
+            }
+
+            img {
+                width: 170px;
+                height: 170px;
+                border-radius: 10px;
+                object-fit: cover;
+                cursor: pointer;
+            }
+
+            .p_container {
+                max-width: 170px;
+                width: 100%;
+                padding-top: 10px;
+
+                p {
+                    color: rgba(255, 255, 255, 0.597);
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 800px) {
+    .Albums {
+        .content {
+            .mainAlbumItems {
+                overflow-x: auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	color-scheme: dark;
+}
+body {
+	background-color: black;
+}
+button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	@media (max-width: 500px) {
+		cursor: default;
+	}
+}
+.container {
+	width: 100%;
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 0 20px;
+}

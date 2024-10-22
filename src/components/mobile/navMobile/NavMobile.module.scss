@@ -1,0 +1,40 @@
+.NavMobile {
+    position: fixed;
+    // top: 0;
+    bottom: 0;
+    display: none;
+    width: 100%;
+    padding: 16px 0;
+    background-color: black;
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .min_content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 5px;
+
+            svg {
+                width: 28px;
+                height: 28px;
+                &:focus {
+                    background-color: rgba(255, 255, 255, 0.19);
+                    border-radius: 50%;
+                }
+            }
+            p {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+
+@media(max-width: 800px) {
+    .NavMobile {
+        display: block;
+    }
+}

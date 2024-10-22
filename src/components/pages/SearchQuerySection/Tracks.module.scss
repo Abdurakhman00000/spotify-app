@@ -1,0 +1,117 @@
+.Tracks {
+  display: flex;
+  justify-content: center; /* Центрируем контент по горизонтали */
+  
+  .content {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.081);
+    border-radius: 8px;
+    margin-left: -20px;
+    padding-top: 20px;
+  }
+
+  .TopResult {
+    flex: 1;
+    margin-right: 20px;
+    
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      margin-left: 20px;
+    }
+
+    .topTrack {
+      cursor: pointer;
+      background-color: #3333333f;
+      width: 430px;
+      height: 230px;
+      margin-bottom: 100px;
+      padding-left: 20px;
+      padding-top: 20px;
+      margin-left: 20px;
+      border-radius: 8px;
+
+      img {
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+
+      @media (max-width: 1300px) {
+        width: 340px; /* Ширина для экрана до 1300px */
+      }
+    }
+  }
+
+  .Songs {
+    flex: 1;
+    margin-left: -135px;
+    padding-top: 15px;
+    
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .track {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      cursor: pointer;
+
+      img {
+        border-radius: 4px;
+        margin-right: 10px;
+      }
+
+      h1, p {
+        margin: 0;
+      }
+      
+      h1 {
+        font-size: 16px;
+      }
+      
+      p {
+        font-size: 14px;
+        color: #b3b3b3; /* Светло-серый цвет для текста исполнителя */
+      }
+    }
+  }
+
+  /* Медиа-запрос для мобильных устройств */
+  @media (max-width: 768px) {
+    flex-direction: column; 
+    align-items: center; 
+
+    .content {
+      flex-direction: column; 
+      margin-left: 0; /* Убираем отрицательный отступ для центрирования */
+    }
+
+    .TopResult {
+      width: 100%; // Делаем блок растягивающимся на всю ширину
+      margin-left: 0; // Убираем отступ для корректного отображения
+      margin-right: 0;
+      padding: 0 20px; 
+    }
+    
+    .Songs {
+      width: 100%; // Делаем блок растягивающимся на всю ширину
+      margin-left: 0; // Убираем отступ для корректного отображения
+      margin-right: 0;
+      padding: 0 20px; 
+      margin-bottom: 40px;
+      
+      .track {
+        margin-bottom: 20px;
+      }
+    }
+    
+
+    .topTrack {
+      width: 100%; /* Ширина трека на всю ширину экрана */
+      margin-left: 0; /* Убираем отступ для корректного отображения */
+      background-color: none;
+    }
+  }
+}
